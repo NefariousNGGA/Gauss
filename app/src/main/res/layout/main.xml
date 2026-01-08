@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#050505"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gauss"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light" /> 
+		<TextView
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Info"
+            android:textColor="#2979FF"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="25dp"
+        android:background="@drawable/rounded_card">
+
+        <TextView
+            android:id="@+id/emfValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="#FFFFFF"
+            android:textSize="90sp"
+            android:fontFamily="sans-serif-light"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/unitLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="µT" 
+            android:textColor="#2979FF"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="-5dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/graphPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_card"
+        android:padding="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_card"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/maxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peak: 0.0 µT"
+            android:textColor="#90A4AE"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Reset Sensor"
+        android:textColor="#455A64"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp" />
+
+</LinearLayout>
+
